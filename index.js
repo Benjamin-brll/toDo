@@ -83,7 +83,7 @@ const showTasks = () => {
             <div class="card-footer text-center">
                 <p class="font-weight-bold">Categoria:</p>
                 <p class="text-danger font-weight-bold">${tasks[i].category.toUpperCase()}</p>
-                <button class="btn btn-danger" onclick="deleteTask('${tasks[i].time}')">Delete</button>
+                <button class="btn btn-danger" onclick="deleteTask('${tasks[i].time}')">Eliminar</button>
             </div>
         </div>`
     }
