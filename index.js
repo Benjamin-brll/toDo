@@ -74,7 +74,7 @@ const showTasks = () => {
     lista.innerHTML = ""
     
     for(let i = 0; i < tasks.length; i++){
-        lista.innerHTML += `<div class="card my-4">
+        lista.innerHTML += `<div class="card mb-4 mt-4 mt-lg-0">
             <div class="card-body">
                 <h5 class="card-title">${tasks[i].title.toUpperCase()}</h5>
                 <p class="card-text">${tasks[i].description}</p>
