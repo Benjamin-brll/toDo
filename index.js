@@ -19,7 +19,7 @@ const createATask = () => {
 
     if(timer > 22 || timer < 5){
         Swal.fire({
-            title: `Es muy tarde para hacer algo`,
+            title: `No es una hora muy apropiada para hacer algo`,
             icon: 'info',
             showDenyButton: true,
             showCancelButton: false,
@@ -27,10 +27,10 @@ const createATask = () => {
             denyButtonText: `No me importa`,
           }).then((result) => {
             if (result.isConfirmed) {
-              Swal.fire('Buena decisión!', 'Ten una buena noche', 'success')
+              Swal.fire('Buena decisión!', 'Este es un horario en el que debes estar descansando', 'success')
               deleteTask(time)
             } else if (result.isDenied) {
-              Swal.fire('Eres importante para nosotros', 'Por favor ve temprano a la cama', 'info')
+              Swal.fire('Eres importante para nosotros', 'Por favor realiza tareas en horarios adecuados', 'info')
             }
           })
     }
