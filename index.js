@@ -9,6 +9,14 @@ const createATask = () => {
     let category = document.getElementById('category').value
     let time = document.getElementById('time').value
 
+    if(!title){
+        Swal.fire({
+            title: `Tienes que brindarnos algun titulo`,
+            icon: 'info',
+          })
+        return false
+    }
+
     let task = {
         title,
         description,
